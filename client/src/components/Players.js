@@ -13,6 +13,7 @@ const Players = props => {
     return(
         <div>
             <NavBar toggleMode={toggleMode} darkMode={darkMode} />
+            <Table celled striped>
            <Table.Body>
                   {props.player.map(players => {
                       return(
@@ -24,6 +25,7 @@ const Players = props => {
                         )
                   })}
                </Table.Body> 
+               </Table>
         </div>
     )
 };
